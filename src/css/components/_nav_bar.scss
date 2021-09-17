@@ -1,0 +1,216 @@
+nav {
+  /***offer nav bar***/
+
+  .offer_info {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid $light_gray;
+  }
+
+  & .offer_items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0 24px;
+    font-size: 12px;
+  }
+
+  & .offer_item {
+    color: $grey_text;
+
+    & .offer_text {
+      cursor: pointer;
+      color: $dark_text;
+      font-weight: 600;
+      position: relative;
+
+      &::before {
+        @include hoverUnderline($dark_text);
+      }
+      &:hover::before {
+        @include hoverScale;
+      }
+    }
+    & .offer_discover {
+      color: $primary_text;
+      cursor: pointer;
+      font-weight: 600;
+      position: relative;
+
+      &::before {
+        @include hoverUnderline($primary_text);
+      }
+      &:hover::before {
+        @include hoverScale;
+      }
+    }
+
+    // & .offer_social_link {
+    //   position: relative;
+    //   margin: 0 16px;
+    //   text-decoration: none;
+    //   color: $grey_text;
+
+    //   &::before {
+    //     @include hoverUnderline($dark_text);
+    //   }
+
+    //   &:hover::before {
+    //     @include hoverScale;
+    //   }
+    // }
+  }
+
+  /***menu navigation desktop***/
+  .nav_bar {
+    display: flex;
+    text-align: center;
+    background-color: #fff;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%;
+
+    & .nav_utils {
+      display: flex;
+      justify-content: flex-end;
+
+      & .util_icon {
+        font-size: 20px;
+        margin: 0 18px;
+      }
+    }
+
+    & .brand_logo img {
+      max-width: 140px;
+    }
+  }
+
+  .nav_active {
+    font-weight: 500;
+    color: $primary_text;
+    position: relative;
+
+    &::before {
+      @include hoverUnderline($primary_text);
+      width: 100% !important;
+      left: 0 !important;
+    }
+  }
+
+  .secondary_nav {
+    background-color: #fff;
+    border-bottom: 1px solid $light_gray;
+    width: 100%;
+
+    & .secondary_nav_items {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 18px;
+    }
+
+    & .sec_nav_item {
+      margin: 0 16px;
+      text-decoration: none;
+      font-size: 14px;
+      position: relative;
+
+      &::before {
+        margin-bottom: -6px;
+        @include hoverUnderline($primary_text);
+      }
+
+      &:hover::before {
+        @include hoverScale;
+      }
+    }
+  }
+}
+
+.addtoCart {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  & #counter {
+    position: absolute;
+    top: -6px;
+    right: -14px;
+    font-size: 12px;
+    background: $primary_text;
+    color: white;
+    border-radius: 100%;
+    padding: 4px 7px;
+    z-index: 1;
+  }
+
+  &:hover {
+    color: $primary_text;
+  }
+}
+
+//////////////////////////////////////////
+
+.brand_logo {
+  width: 140px;
+}
+
+.mobile_menu {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid $smoke;
+  z-index: 1;
+}
+
+.mobile_menu #nav_link {
+  display: none;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.mobile_menu a {
+  color: $dark-gray;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border-bottom: 1px solid $smoke;
+}
+
+.mobile_menu a.icon {
+  // pointer-events: none;
+  cursor: pointer;
+  background: $primary_text;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 12px;
+  color: #fff;
+}
+
+.mobile_menu .mob_nav_links:hover {
+  color: #fff;
+  background-color: $primary_text;
+}
+
+.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile_menu {
+    display: none;
+  }
+
+  .desktop_nav {
+    display: block !important;
+  }
+}
+
+.desktop_nav {
+  display: none;
+}

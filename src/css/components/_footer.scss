@@ -1,0 +1,156 @@
+footer {
+  background-color: $footer_gray;
+  padding: 52px 20px;
+}
+
+.newsletter_container {
+  text-align: center;
+  & .newsletter_title {
+    font-size: 16px;
+    line-height: 26px;
+    color: $dark-gray;
+    padding: 0 0 18px 0;
+    font-weight: 500;
+  }
+}
+
+form {
+  width: 100%;
+  margin: auto;
+
+  .form_group {
+    display: flex;
+    align-items: center;
+  }
+
+  .form_element {
+    height: 36px;
+    border: none;
+  }
+
+  .form_email {
+    width: 75%;
+    background: #fff;
+    font-family: inherit;
+    text-indent: 5%;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    color: #777777;
+    box-shadow: 0px 2px 12px #33333300;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .form_submit {
+    font-family: inherit;
+    cursor: pointer;
+    width: 25%;
+    color: #fff;
+    background: $dark_text;
+    font-weight: 600;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: $primary_text;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.terms {
+  margin: 26px 0;
+}
+.terms p {
+  font-size: 12px;
+
+  & a {
+    font-weight: 300;
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+      @include hoverUnderline($dark-gray);
+    }
+    &:hover::before {
+      @include hoverScale;
+    }
+  }
+}
+
+.newsletter_social_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark-gray;
+
+  & .follow_us_text {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  & .social_icons a {
+    color: $social_icons;
+
+    & ion-icon {
+      margin: 0 6px;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+.footer_copyright {
+  margin: 40px 0;
+
+  & .footer_text {
+    font-size: 12px;
+    color: $grey_text;
+
+    & a {
+      text-decoration: none;
+      position: relative;
+
+      &::before {
+        margin-bottom: -6px !important;
+        @include hoverUnderline($dark-gray);
+      }
+
+      &:hover::before {
+        @include hoverScale;
+      }
+    }
+  }
+
+  .footer_payment {
+    margin: 26px auto;
+
+    & a img {
+      width: 40px;
+      margin: 0 10px;
+    }
+  }
+}
+
+.footer_mastercard {
+  width: 24px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 97px 0 30px 0;
+  }
+
+  form {
+    width: 50% !important;
+  }
+}

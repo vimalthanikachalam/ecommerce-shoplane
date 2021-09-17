@@ -1,0 +1,64 @@
+@import "./vendors/grid.min.css";
+@import "./variables/colors";
+@import "./partials/resets";
+@import "./partials/mixins.scss";
+@import "./layouts/home";
+@import "./layouts/collections";
+@import "./layouts/product_page";
+@import "./layouts/checkout";
+@import "./components/toast";
+@import "./layouts/thankyou";
+
+html {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.spacer-60 {
+  padding: 60px;
+}
+
+.mobile_spacer {
+  padding: 30px;
+}
+
+.mobile_spacer_40 {
+  padding: 40px;
+}
+
+.spacer-20 {
+  padding: 20px;
+}
+
+.spacer-30 {
+  padding: 30px;
+}
+
+body {
+  background-color: #fff;
+  background-size: cover;
+}
+
+a {
+  color: $dark_text;
+}
+
+hr {
+  border-top: 1px solid $smoke;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.border_image {
+  border: 1px solid $primary_text !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile_spacer {
+    padding: 0;
+  }
+  .mobile_spacer_40 {
+    padding: 0;
+  }
+}

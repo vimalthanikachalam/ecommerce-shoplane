@@ -1,0 +1,21 @@
+.thank_img {
+  text-align: center;
+  & img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background: #ffffff;
+  }
+}
+.thankyou_text {
+  font-size: 24px;
+  text-align: center;
+
+  & p {
+    line-height: 1.4rem;
+  }
+}
+h1 {
+  padding: 20px;
+  color: $success_green;
+}

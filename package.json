@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development --open ",
-    "prod": "webpack --config webpack.prod.js"
+    "prod": "webpack --config webpack.prod.js",
+    "vercel-build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "Vimal Thanikachalam",

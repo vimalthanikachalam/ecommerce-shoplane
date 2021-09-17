@@ -46,7 +46,7 @@ export const navigation = () => {
         <div class="secondary_nav_items col-12">
           <a href="index.html" class="sec_nav_item nav_active">Home</a>
           <a href="./product.html" class="sec_nav_item">Shop</a>
-          <a href="./productdetail.html" class="sec_nav_item">Men's</a>
+          <a href="#" class="sec_nav_item">Men's</a>
           <a href="#" class="sec_nav_item">Women's</a>
         </div>
       </div>

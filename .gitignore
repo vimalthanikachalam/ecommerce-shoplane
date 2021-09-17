@@ -2,3 +2,5 @@ node_modules
 /package-lock.json
 demo
 dist
+.firebaserc
+firebase.json

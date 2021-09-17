@@ -2,7 +2,7 @@
 
 This repository contains Ecommerce Project built using Pure JavaScript, no other framework or library used.
 
-#### [LIVE DEMO](https://ecommerce-c620f.web.app/)
+#### [LIVE DEMO](https://ecommerce-shoplane.web.app)
 
 ## Tech Stack
 
